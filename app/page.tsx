@@ -126,7 +126,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 text-yates-deep-green/80 leading-relaxed">
             <div className="space-y-4">
               <p>
-                In 1935, Joseph "Joe" William Yates and his partner, Mr. Burns, opened Burns and Yates Funeral Home in Fort Pierce. Within a few months Mr. Burns moved to Miami, and the funeral home became Yates Funeral Home. The original location was at 524 North Fourth Street, and at this time, we also served as an ambulance service.
+                In 1935, Joseph &quot;Joe&quot; William Yates and his partner, Mr. Burns, opened Burns and Yates Funeral Home in Fort Pierce. Within a few months Mr. Burns moved to Miami, and the funeral home became Yates Funeral Home. The original location was at 524 North Fourth Street, and at this time, we also served as an ambulance service.
               </p>
               <p>
                 In 1943, Joe Yates bought Fee Mortuary and their unfinished building on US#1. By 1944, Joe, his wife Hattie, and daughter Sally, welcomed baby Bill into the new funeral home.

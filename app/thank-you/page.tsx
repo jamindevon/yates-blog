@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 import { trackEvent } from "@/components/MetaPixel";
 
 export default function ThankYouPage() {
@@ -102,12 +103,12 @@ export default function ThankYouPage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/"
               className="inline-block bg-slate-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-800 transition-colors"
             >
               Back to Home
-            </a>
+            </Link>
             <a
               href="tel:+15551234567"
               className="inline-block bg-white text-slate-700 font-bold py-3 px-6 rounded-lg border-2 border-slate-700 hover:bg-slate-50 transition-colors"
