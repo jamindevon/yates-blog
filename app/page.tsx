@@ -92,7 +92,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="text-white">
-                    <h3 className="font-bold text-base mb-0.5">Meet Tom Yates</h3>
+                    <h3 className="font-bold text-base mb-0.5">Meet Tom Conway</h3>
                     <p className="text-xs text-yates-ivory/90">
                       Owner & 5th Generation Funeral Director
                     </p>
