@@ -125,8 +125,9 @@ export function PrePlanningForm() {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
+          required
           className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yates-gold focus:border-transparent text-gray-900"
-          placeholder="Phone Number (Optional)"
+          placeholder="Phone Number *"
         />
       </div>
 
@@ -137,8 +138,9 @@ export function PrePlanningForm() {
           name="zipCode"
           value={formData.zipCode}
           onChange={handleChange}
+          required
           className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yates-gold focus:border-transparent text-gray-900"
-          placeholder="Zip Code (Optional)"
+          placeholder="Zip Code *"
           maxLength={5}
           pattern="[0-9]{5}"
         />
