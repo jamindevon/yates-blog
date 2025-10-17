@@ -6,7 +6,7 @@ const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KE
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, zipCode } = body;
+    const { firstName, lastName, email, phone, zipCode } = body;
 
     // Validate required fields
     if (!firstName || !lastName || !email) {
@@ -29,12 +29,13 @@ export async function POST(request: NextRequest) {
     if (resend) {
       const fromEmail = process.env.FROM_EMAIL || "onboarding@resend.dev";
       const toEmail = process.env.TO_EMAIL || "thesunlandcompany@gmail.com";
+      const tomEmail = "TomJR@YatesFuneralHome.com";
 
       try {
-        // Send notification email to track leads
+        // Send notification email to track leads (to both you and Tom)
         await resend.emails.send({
           from: fromEmail,
-          to: toEmail,
+          to: [toEmail, tomEmail],
           subject: `🔔 New Lead: ${firstName} ${lastName} - Yates Funeral Home`,
           html: `
             <!DOCTYPE html>
@@ -70,6 +71,13 @@ export async function POST(request: NextRequest) {
                       <span class="label">Email</span>
                       <span class="value"><a href="mailto:${email}">${email}</a></span>
                     </div>
+
+                    ${phone ? `
+                    <div class="field">
+                      <span class="label">Phone</span>
+                      <span class="value"><a href="tel:${phone}">${phone}</a></span>
+                    </div>
+                    ` : ''}
 
                     ${zipCode ? `
                     <div class="field">

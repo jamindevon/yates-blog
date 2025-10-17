@@ -8,6 +8,7 @@ export function PrePlanningForm() {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
     zipCode: "",
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -114,6 +115,18 @@ export function PrePlanningForm() {
           required
           className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yates-gold focus:border-transparent text-gray-900"
           placeholder="Email Address *"
+        />
+      </div>
+
+      <div>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yates-gold focus:border-transparent text-gray-900"
+          placeholder="Phone Number (Optional)"
         />
       </div>
 
