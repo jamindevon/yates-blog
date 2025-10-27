@@ -1,5 +1,6 @@
 import { LunchLearnForm } from "@/components/LunchLearnForm";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Lunch & Learn Event | Yates Funeral Home",
@@ -25,7 +26,7 @@ export default function LunchLearnPage() {
         <div className="max-w-4xl mx-auto relative z-10">
           {/* Back to Home Link */}
           <div className="mb-6">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center text-white hover:text-yates-gold transition-colors"
             >
@@ -33,7 +34,7 @@ export default function LunchLearnPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Back to Home
-            </a>
+            </Link>
           </div>
 
           {/* Two Column Layout: Flyer + Registration Form */}
@@ -73,7 +74,7 @@ export default function LunchLearnPage() {
                     RSVP Today — Seating is Limited!
                   </h2>
                   <p className="text-yates-deep-green/70 text-sm">
-                    Reserve your spot by clicking "Sign Up" to attend.
+                    Reserve your spot by clicking &quot;Sign Up&quot; to attend.
                   </p>
                 </div>
                 <LunchLearnForm />
