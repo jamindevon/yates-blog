@@ -4,6 +4,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-yates-ivory to-yates-light-sage">
+      {/* Floating Lunch & Learn CTA Button */}
+      <a
+        href="/lunch-learn"
+        className="fixed bottom-6 right-6 z-50 bg-yates-gold hover:bg-yates-gold/90 text-white font-bold py-4 px-6 rounded-lg shadow-2xl transition-all transform hover:scale-105 flex items-center gap-2 animate-pulse hover:animate-none"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div className="text-left">
+          <div className="text-sm leading-tight">FREE Lunch & Learn</div>
+          <div className="text-xs font-normal opacity-90">Nov 5 • 11:30 AM</div>
+        </div>
+      </a>
+
       {/* Hero Section with Form - Above the Fold */}
       <section
         className="relative py-12 md:py-20 px-4 overflow-hidden"
