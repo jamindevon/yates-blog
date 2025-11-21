@@ -29,13 +29,14 @@ export async function POST(request: NextRequest) {
     if (resend) {
       const fromEmail = process.env.FROM_EMAIL || "onboarding@resend.dev";
       const toEmail = process.env.TO_EMAIL || "thesunlandcompany@gmail.com";
-      const tomEmail = "TomJR@YatesFuneralHome.com";
+      const tomEmail = "tomjr@yatesfuneralhome.com";
+      const brianEmail = "Brian@yatesfuneralhome.com";
 
       try {
-        // Send notification email to track leads (to both you and Tom)
+        // Send notification email to track leads (to you, Tom, and Brian)
         await resend.emails.send({
           from: fromEmail,
-          to: [toEmail, tomEmail],
+          to: [toEmail, tomEmail, brianEmail],
           subject: `🔔 New Lead: ${firstName} ${lastName} - Yates Funeral Home`,
           html: `
             <!DOCTYPE html>
