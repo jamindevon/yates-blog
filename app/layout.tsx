@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { MetaPixel } from "@/components/MetaPixel";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Free Pre-Planning Guide | Yates Funeral Home",
@@ -18,8 +20,10 @@ export default function RootLayout({
         <MetaPixel />
       </head>
       <body>
+        <Header />
         {children}
+        <Footer />
       </body>
-    </html>
+    </html >
   );
 }
