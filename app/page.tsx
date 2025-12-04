@@ -11,9 +11,9 @@ export default function Home() {
         <div className="absolute inset-0 z-0 bg-gray-900">
           <div className="relative w-full h-full">
             <iframe
-              src="https://drive.google.com/file/d/12Nm1fwE-swLqu5mQ40UxiOx8sH54Mhoy/preview?autoplay=1&mute=1&start=4"
-              className="absolute inset-0 w-full h-full object-cover"
-              allow="autoplay; fullscreen"
+              src="https://www.youtube.com/embed/nX319wmyS1E?autoplay=1&mute=1&controls=0&loop=1&playlist=nX319wmyS1E&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=4"
+              className="absolute inset-0 w-full h-full object-cover pointer-events-none scale-150"
+              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
               title="Yates Funeral Home Background Video"
             />
             {/* Overlay to ensure text readability */}
