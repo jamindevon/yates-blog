@@ -8,16 +8,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-5rem)] flex flex-col justify-center overflow-hidden">
         {/* Background Video/Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 bg-gray-900">
           <div className="relative w-full h-full">
             <iframe
               src="https://drive.google.com/file/d/12Nm1fwE-swLqu5mQ40UxiOx8sH54Mhoy/preview?autoplay=1&mute=1&start=4"
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none scale-150"
+              className="absolute inset-0 w-full h-full object-cover"
               allow="autoplay; fullscreen"
               title="Yates Funeral Home Background Video"
             />
             {/* Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-yates-evergreen/60 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-yates-evergreen/40" />
           </div>
         </div>
 
