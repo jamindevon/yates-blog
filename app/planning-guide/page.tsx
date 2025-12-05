@@ -1,4 +1,4 @@
-import { HubSpotPlanningForm } from "@/components/HubSpotPlanningForm";
+import { PrePlanningForm } from "@/components/PrePlanningForm";
 import Image from "next/image";
 
 export default function PlanningGuide() {
@@ -74,7 +74,7 @@ export default function PlanningGuide() {
                         <h2 className="font-heading text-2xl font-bold text-yates-evergreen mb-6 text-center">
                             Get Your Free Guide
                         </h2>
-                        <HubSpotPlanningForm />
+                        <PrePlanningForm />
                     </div>
                 </div>
             </div>

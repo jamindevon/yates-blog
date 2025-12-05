@@ -21,11 +21,18 @@ export function PrePlanningForm() {
     setErrorMessage("");
 
     try {
-      // In a real app, you would send this to your API
-      // const response = await fetch("/api/submit", { ... });
+      // Send form data to the API
+      const response = await fetch("/api/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // Simulating API call for now since we are just restructuring the frontend
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
 
       // Track successful lead submission
       trackEvent("Lead", {
@@ -34,9 +41,6 @@ export function PrePlanningForm() {
       });
 
       setStatus("success");
-
-      // Redirect to the guide URL or show download link
-      // For now, we'll just show the success message with a download link as per the plan
     } catch (error) {
       console.error("Form submission error:", error);
       setStatus("error");
