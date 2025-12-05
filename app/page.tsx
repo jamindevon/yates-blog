@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { HeroVideo } from "@/components/HeroVideo";
 
 export default function Home() {
   return (
@@ -7,19 +8,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-5rem)] flex flex-col justify-center overflow-hidden">
-        {/* Background Video/Image */}
-        <div className="absolute inset-0 z-0 bg-gray-900">
-          <div className="relative w-full h-full">
-            <iframe
-              src="https://www.youtube.com/embed/nX319wmyS1E?autoplay=1&mute=1&controls=0&loop=1&playlist=nX319wmyS1E&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=4&origin=http://localhost:3000"
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              title="Yates Funeral Home Background Video"
-            />
-            {/* Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-yates-evergreen/40" />
-          </div>
-        </div>
+        {/* Background Video */}
+        <HeroVideo />
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white mt-[-40px]">
