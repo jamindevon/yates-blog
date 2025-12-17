@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HeroVideo } from "@/components/HeroVideo";
+import { ContactButton } from "@/components/ContactButton";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a href="tel:7724617000" className="bg-yates-gold hover:bg-yates-gold/90 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-transform hover:scale-105">
+            <ContactButton href="tel:7724617000" className="bg-yates-gold hover:bg-yates-gold/90 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-transform hover:scale-105">
               Call a Director Now
-            </a>
+            </ContactButton>
             <Link href="/planning-guide" className="bg-white text-yates-evergreen hover:bg-yates-ivory px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-transform hover:scale-105">
               Get the Free Planning Guide
             </Link>

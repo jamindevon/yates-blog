@@ -1,9 +1,11 @@
 import { PrePlanningForm } from "@/components/PrePlanningForm";
+import { ViewContentTracker } from "@/components/ViewContentTracker";
 import Image from "next/image";
 
 export default function PlanningGuide() {
     return (
         <main className="min-h-screen bg-yates-ivory">
+            <ViewContentTracker contentName="Pre-Planning Guide" contentCategory="Lead Magnet" />
             <div className="grid md:grid-cols-2 min-h-screen">
 
                 {/* Left Column: Content */}

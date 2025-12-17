@@ -35,7 +35,7 @@ export function PrePlanningForm() {
       }
 
       // Track successful lead submission
-      trackEvent("Lead", {
+      trackEvent("CompleteRegistration", {
         content_name: "Pre-Planning Guide",
         content_category: "Lead Magnet",
       });
@@ -156,7 +156,8 @@ export function PrePlanningForm() {
           className="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yates-gold focus:border-transparent text-gray-900 bg-white"
         >
           <option value="" disabled>Timeline *</option>
-          <option value="Now">Now</option>
+          <option value="Immediate Need">Immediate Need</option>
+          <option value="Just Planning">Just Planning</option>
           <option value="Next 30 Days">Next 30 Days</option>
           <option value="3-12 Months">3–12 Months</option>
         </select>
